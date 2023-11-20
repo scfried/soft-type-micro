@@ -1,4 +1,4 @@
-<h1>The Soft Type Collection, Jacquard</h1>
+<h1>The Soft Type Collection, Micro</h1>
 
 <h5>The Typeface</h5>
 <p>Micro is a teeny tiny typeface that can fit anywhere on your project.</p>
