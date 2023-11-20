@@ -11193,6 +11193,16 @@ width = 450;
 );
 },
 {
+glyphname = hairspace;
+layers = (
+{
+layerId = m01;
+width = 150;
+}
+);
+unicode = 8202;
+},
+{
 glyphname = space;
 lastChange = "2023-10-22 19:17:10 +0000";
 layers = (
@@ -15279,7 +15289,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project, Micro (https://github.com/scfried/soft-type-micro)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-micro)";
 }
 );
 },

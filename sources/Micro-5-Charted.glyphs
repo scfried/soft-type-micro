@@ -2,7 +2,7 @@
 .appVersion = "3151";
 .formatVersion = 3;
 date = "2023-06-04 20:05:16 +0000";
-familyName = "Micro 5";
+familyName = "Micro 5 Charted";
 fontMaster = (
 {
 id = m01;
@@ -31172,6 +31172,60 @@ width = 450;
 );
 },
 {
+glyphname = hairspace;
+lastChange = "2023-11-03 13:26:40 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(0,1050,l),
+(0,-160,l),
+(150,-160,l),
+(150,-150,l),
+(10,-150,l),
+(10,-10,l),
+(150,-10,l),
+(150,0,l),
+(10,0,l),
+(10,140,l),
+(150,140,l),
+(150,150,l),
+(10,150,l),
+(10,290,l),
+(150,290,l),
+(150,300,l),
+(10,300,l),
+(10,440,l),
+(150,440,l),
+(150,450,l),
+(10,450,l),
+(10,590,l),
+(150,590,l),
+(150,600,l),
+(10,600,l),
+(10,740,l),
+(150,740,l),
+(150,750,l),
+(10,750,l),
+(10,890,l),
+(150,890,l),
+(150,900,l),
+(10,900,l),
+(10,1040,l),
+(150,1040,l),
+(150,1050,l)
+);
+}
+);
+width = 150;
+}
+);
+unicode = 8202;
+},
+{
 glyphname = space;
 lastChange = "2023-10-22 19:28:22 +0000";
 layers = (
@@ -44588,7 +44642,7 @@ unicode = 778;
 },
 {
 glyphname = tildecomb;
-lastChange = "2023-10-22 19:28:41 +0000";
+lastChange = "2023-11-03 13:31:28 +0000";
 layers = (
 {
 anchors = (
@@ -44617,6 +44671,16 @@ ref = pixel;
 {
 alignment = -1;
 pos = (450,900);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (0,900);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,750);
 ref = pixel;
 }
 );
@@ -45064,7 +45128,7 @@ width = 450;
 },
 {
 glyphname = tildecomb.case;
-lastChange = "2023-10-22 19:28:41 +0000";
+lastChange = "2023-11-03 13:31:44 +0000";
 layers = (
 {
 anchors = (
@@ -45093,6 +45157,16 @@ ref = pixel;
 {
 alignment = -1;
 pos = (450,1050);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (0,1050);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,900);
 ref = pixel;
 }
 );
@@ -45492,7 +45566,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project, Micro (https://github.com/scfried/soft-type-micro)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-micro)";
 }
 );
 },
