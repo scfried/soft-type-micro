@@ -1,4 +1,4 @@
 sources:
-  - Micro-5.glyphs
-  - Micro-5-Charted.glyphs
-familyName: Micro
+  - Micro5.glyphs
+familyName: Micro 5
+buildOTF: false

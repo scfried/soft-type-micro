@@ -1,10 +1,220 @@
 {
-.appVersion = "3151";
+.appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"Micro 5
+
+
+
+"
+);
+classes = (
+{
+automatic = 1;
+code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+name = Uppercase;
+}
+);
+customParameters = (
+{
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+}
+);
 date = "2023-06-04 20:05:16 +0000";
 familyName = "Micro 5";
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn CAT;
+languagesystem latn NLD;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature locl;
+feature ordn;
+feature pnum;
+feature tnum;
+feature case;
+";
+tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	lookupflag 0;
+	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb];
+	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+
+lookup ccmp_Other_3 {
+	lookupflag 0;
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_3;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language CAT;
+lookup locl_latn_2 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_2;
+
+script latn;
+language NLD;
+lookup locl_latn_3 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_3;
+";
+tag = locl;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
+tag = ordn;
+},
+{
+automatic = 1;
+code = "sub zero.tf by zero;
+sub one.tf by one;
+sub two.tf by two;
+sub three.tf by three;
+sub four.tf by four;
+sub five.tf by five;
+sub six.tf by six;
+sub seven.tf by seven;
+sub eight.tf by eight;
+sub nine.tf by nine;
+";
+tag = pnum;
+},
+{
+automatic = 1;
+code = "sub zero by zero.tf;
+sub one by one.tf;
+sub two by two.tf;
+sub three by three.tf;
+sub four by four.tf;
+sub five by five.tf;
+sub six by six.tf;
+sub seven by seven.tf;
+sub eight by eight.tf;
+sub nine by nine.tf;
+";
+tag = tnum;
+},
+{
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub dieresiscomb by dieresiscomb.case;
+sub dotaccentcomb by dotaccentcomb.case;
+sub gravecomb by gravecomb.case;
+sub acutecomb by acutecomb.case;
+sub hungarumlautcomb by hungarumlautcomb.case;
+sub circumflexcomb by circumflexcomb.case;
+sub caroncomb by caroncomb.case;
+sub brevecomb by brevecomb.case;
+sub ringcomb by ringcomb.case;
+sub tildecomb by tildecomb.case;
+sub macroncomb by macroncomb.case;
+";
+tag = case;
+}
+);
 fontMaster = (
 {
+customParameters = (
+{
+name = typoAscender;
+value = 900;
+},
+{
+name = typoDescender;
+value = -150;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 900;
+},
+{
+name = winDescent;
+value = -150;
+},
+{
+name = hheaAscender;
+value = 900;
+},
+{
+name = hheaDescender;
+value = -150;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 id = m01;
 metricValues = (
 {
@@ -31,7 +241,7 @@ name = Regular;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-10-21 20:31:17 +0000";
+lastChange = "2023-10-22 19:27:13 +0000";
 layers = (
 {
 anchors = (
@@ -1368,7 +1578,7 @@ unicode = 288;
 },
 {
 glyphname = H;
-lastChange = "2023-06-09 20:47:57 +0000";
+lastChange = "2023-12-07 10:46:50 +0000";
 layers = (
 {
 layerId = m01;
@@ -2227,7 +2437,7 @@ unicode = 310;
 },
 {
 glyphname = L;
-lastChange = "2023-10-21 20:36:00 +0000";
+lastChange = "2023-12-07 11:01:14 +0000";
 layers = (
 {
 anchors = (
@@ -2238,6 +2448,10 @@ pos = (300,0);
 {
 name = center;
 pos = (300,450);
+},
+{
+name = right;
+pos = (300,300);
 },
 {
 name = top.case;
@@ -2382,7 +2596,7 @@ unicode = 313;
 },
 {
 glyphname = Lcaron;
-lastChange = "2023-10-22 20:42:13 +0000";
+lastChange = "2023-12-07 11:01:39 +0000";
 layers = (
 {
 layerId = m01;
@@ -2391,8 +2605,8 @@ shapes = (
 ref = L;
 },
 {
-pos = (-150,0);
-ref = caroncomb.case;
+pos = (300,-300);
+ref = caroncomb.alt;
 }
 );
 width = 450;
@@ -5887,13 +6101,17 @@ unicode = 267;
 },
 {
 glyphname = d;
-lastChange = "2023-10-21 20:51:43 +0000";
+lastChange = "2023-12-07 11:01:18 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (300,0);
+},
+{
+name = right;
+pos = (600,300);
 },
 {
 name = top;
@@ -6003,20 +6221,22 @@ unicode = 240;
 },
 {
 glyphname = dcaron;
-lastChange = "2023-10-21 20:51:44 +0000";
+lastChange = "2023-12-07 11:01:55 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = d;
 },
 {
-pos = (150,150);
-ref = caroncomb;
+alignment = -1;
+pos = (600,-300);
+ref = caroncomb.alt;
 }
 );
-width = 600;
+width = 750;
 }
 );
 unicode = 271;
@@ -7238,13 +7458,17 @@ unicode = 311;
 },
 {
 glyphname = l;
-lastChange = "2023-10-21 20:47:31 +0000";
+lastChange = "2023-12-07 11:01:22 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (150,0);
+},
+{
+name = right;
+pos = (300,300);
 },
 {
 name = top;
@@ -7303,20 +7527,22 @@ unicode = 314;
 },
 {
 glyphname = lcaron;
-lastChange = "2023-10-21 20:47:33 +0000";
+lastChange = "2023-12-07 11:02:03 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = l;
 },
 {
-pos = (-150,150);
-ref = caroncomb;
+alignment = -1;
+pos = (300,-300);
+ref = caroncomb.alt;
 }
 );
-width = 300;
+width = 450;
 }
 );
 unicode = 318;
@@ -8444,13 +8670,17 @@ unicode = 223;
 },
 {
 glyphname = t;
-lastChange = "2023-10-21 20:51:21 +0000";
+lastChange = "2023-12-07 11:01:29 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (300,0);
+},
+{
+name = right;
+pos = (300,450);
 },
 {
 name = top;
@@ -8501,7 +8731,7 @@ unicode = 116;
 },
 {
 glyphname = tcaron;
-lastChange = "2023-10-21 20:51:22 +0000";
+lastChange = "2023-12-07 11:01:39 +0000";
 layers = (
 {
 layerId = m01;
@@ -8510,8 +8740,8 @@ shapes = (
 ref = t;
 },
 {
-pos = (0,150);
-ref = caroncomb;
+pos = (300,-150);
+ref = caroncomb.alt;
 }
 );
 width = 450;
@@ -11184,11 +11414,82 @@ width = 600;
 },
 {
 glyphname = .notdef;
-lastChange = "2023-10-22 18:54:30 +0000";
+lastChange = "2023-12-07 10:45:43 +0000";
 layers = (
 {
 layerId = m01;
-width = 450;
+shapes = (
+{
+alignment = -1;
+pos = (0,600);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (0,450);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (0,300);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (0,150);
+ref = pixel;
+},
+{
+alignment = -1;
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,600);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,450);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,300);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,150);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (450,0);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (150,600);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (300,600);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (150,0);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (300,0);
+ref = pixel;
+}
+);
+width = 750;
 }
 );
 },
@@ -14186,12 +14487,12 @@ unicode = 779;
 },
 {
 glyphname = caroncomb.alt;
-lastChange = "2023-10-22 19:25:32 +0000";
+lastChange = "2023-12-07 11:01:02 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _right;
 pos = (0,600);
 }
 );
@@ -15257,6 +15558,14 @@ width = 150;
 );
 }
 );
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+}
+);
 metrics = (
 {
 type = ascender;
@@ -15276,15 +15585,6 @@ type = "x-height";
 );
 properties = (
 {
-key = designers;
-values = (
-{
-language = dflt;
-value = "Sarah Cadigan-Fried";
-}
-);
-},
-{
 key = copyrights;
 values = (
 {
@@ -15294,12 +15594,20 @@ value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfrie
 );
 },
 {
+key = designers;
+values = (
+{
+language = dflt;
+value = "Sarah Cadigan-Fried";
+}
+);
+},
+{
 key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
-";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
