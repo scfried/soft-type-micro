@@ -1,6 +1,13 @@
 {
 .appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"Micro 5
+
+
+
+"
+);
 classes = (
 {
 automatic = 1;
