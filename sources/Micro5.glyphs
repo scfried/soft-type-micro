@@ -184,11 +184,11 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 900;
+value = 1200;
 },
 {
 name = typoDescender;
-value = -150;
+value = -310;
 },
 {
 name = typoLineGap;
@@ -196,19 +196,19 @@ value = 0;
 },
 {
 name = winAscent;
-value = 900;
+value = 1200;
 },
 {
 name = winDescent;
-value = -150;
+value = 310;
 },
 {
 name = hheaAscender;
-value = 900;
+value = 1200;
 },
 {
 name = hheaDescender;
-value = -150;
+value = -310;
 },
 {
 name = hheaLineGap;
@@ -241,7 +241,7 @@ name = Regular;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-10-22 19:27:13 +0000";
+lastChange = "2023-12-13 14:27:33 +0000";
 layers = (
 {
 anchors = (
@@ -7273,7 +7273,7 @@ unicode = 106;
 },
 {
 glyphname = jdotless;
-lastChange = "2023-07-24 13:12:33 +0000";
+lastChange = "2023-12-13 14:34:22 +0000";
 layers = (
 {
 layerId = m01;
@@ -15619,7 +15619,7 @@ value = "https://scripts.sil.org/OFL";
 settings = {
 gridLength = 150;
 };
-unitsPerEm = 1050;
+unitsPerEm = 1200;
 versionMajor = 1;
 versionMinor = 0;
 }
