@@ -1,6 +1,9 @@
 {
-.appVersion = "3151";
+.appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"Ļ Â"
+);
 classes = (
 {
 automatic = 1;
@@ -177,11 +180,11 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 900;
+value = 1200;
 },
 {
 name = typoDescender;
-value = -150;
+value = -310;
 },
 {
 name = typoLineGap;
@@ -189,19 +192,19 @@ value = 0;
 },
 {
 name = winAscent;
-value = 900;
+value = 1200;
 },
 {
 name = winDescent;
-value = -150;
+value = 310;
 },
 {
 name = hheaAscender;
-value = 900;
+value = 1200;
 },
 {
 name = hheaDescender;
-value = -150;
+value = -310;
 },
 {
 name = hheaLineGap;
@@ -2206,7 +2209,7 @@ unicode = 66;
 },
 {
 glyphname = C;
-lastChange = "2023-12-13 14:30:14 +0000";
+lastChange = "2023-10-22 18:28:14 +0000";
 layers = (
 {
 anchors = (
@@ -8409,7 +8412,7 @@ unicode = 75;
 },
 {
 glyphname = Kcommaaccent;
-lastChange = "2023-10-22 19:27:13 +0000";
+lastChange = "2023-10-22 18:33:02 +0000";
 layers = (
 {
 layerId = m01;
@@ -8922,9 +8925,14 @@ unicode = 317;
 },
 {
 glyphname = Lcommaaccent;
-lastChange = "2023-10-22 19:27:13 +0000";
+lastChange = "2023-12-14 11:23:04 +0000";
 layers = (
 {
+guides = (
+{
+pos = (0,-310);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -69944,13 +69952,18 @@ width = 600;
 },
 {
 glyphname = circumflexcomb.case;
-lastChange = "2023-10-22 19:28:41 +0000";
+lastChange = "2023-12-14 11:20:18 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top.case;
 pos = (150,750);
+}
+);
+guides = (
+{
+pos = (45,-310);
 }
 );
 layerId = m01;
@@ -70555,7 +70568,7 @@ key = licenseURL;
 value = "https://scripts.sil.org/OFL";
 }
 );
-unitsPerEm = 1050;
+unitsPerEm = 1200;
 versionMajor = 1;
 versionMinor = 0;
 }
