@@ -1,6 +1,6 @@
 # The Soft Type Collection: Micro
 
-![Sample of Micro](documentation/sotf-type-collection-promo-2_MICRO 2-1 Standard.png)
+![Sample of Micro](documentation/soft-type-collection-promo-MICRO-2-Standard.png)
 
 ## The Typeface
 Micro is a teeny tiny typeface that can fit anywhere on your project.
