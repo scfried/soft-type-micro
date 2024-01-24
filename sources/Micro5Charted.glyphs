@@ -1,6 +1,9 @@
 {
-.appVersion = "3151";
+.appVersion = "3234";
 .formatVersion = 3;
+DisplayStrings = (
+H
+);
 classes = (
 {
 automatic = 1;
@@ -177,11 +180,11 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 1200;
+value = 1190;
 },
 {
 name = typoDescender;
-value = -310;
+value = -460;
 },
 {
 name = typoLineGap;
@@ -189,19 +192,19 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1200;
+value = 1350;
 },
 {
 name = winDescent;
-value = 310;
+value = 460;
 },
 {
 name = hheaAscender;
-value = 1200;
+value = 1190;
 },
 {
 name = hheaDescender;
-value = -310;
+value = -460;
 },
 {
 name = hheaLineGap;
@@ -75159,16 +75162,16 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 }
 );
-unitsPerEm = 1200;
+unitsPerEm = 1650;
 versionMajor = 1;
 versionMinor = 0;
 }
