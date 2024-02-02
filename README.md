@@ -15,13 +15,9 @@ These typefaces were designed with machine knitting in mind, but could be used f
 
 Note: for Fair Isle knitting you do need to beware of floats and plan accordingly as always.
 
-## Designers involved
+## Designers Involved
 ### Designer: 
 - Sarah Cadigan-Fried
-
-### With thanks to: 
-- David Jonathan Ross
-- Libbie Bischoff
 
 Copyright 2023 Sarah Cadigan-Fried (sarahcadiganfried@gmail.com)
 
