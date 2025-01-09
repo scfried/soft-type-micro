@@ -1,5 +1,5 @@
 {
-.appVersion = "3234";
+.appVersion = "3326";
 .formatVersion = 3;
 DisplayStrings = (
 "Micro 5
@@ -15621,5 +15621,5 @@ gridLength = 150;
 };
 unitsPerEm = 1650;
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }
