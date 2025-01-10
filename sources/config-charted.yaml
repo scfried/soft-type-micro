@@ -2,3 +2,4 @@ sources:
   - Micro5Charted.glyphs
 familyName: Micro Charted
 buildOTF: false
+extraFontmakeArgs: --filter "ufo2ft.filters.decomposeComponents::DecomposeComponentsFilter"
